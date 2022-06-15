@@ -16,10 +16,10 @@ git clone https://github.com/lypnol/shell-setup.git ~/.shell-setup
 cd ~/.shell-setup
 
 if [[ -z "${ENV_NAME}" ]]; then
-    echo "no env name, setting this as a laptop"
+    echo "no env name set: setting this as a laptop"
 else
-    echo "env $ENV_NAME, setting this as a remote server" 
-    echo "$ENV_NAME" > .env
+    echo "env '$ENV_NAME': setting this as a remote server"
+    echo "$ENV_NAME" > ~/.shell-setup/.env
 fi
 
 ./installs.sh

@@ -13,3 +13,10 @@ plugins=(git z zsh-syntax-highlighting)
 
 source /etc/profile
 source $ZSH/oh-my-zsh.sh
+
+bindkey "^[[1;9D" backward-word
+bindkey "^[[1;9C" forward-word
+bindkey "^[[1;10D" beginning-of-line
+bindkey "^[[1;10C" end-of-line
+bindkey "^[[1;e~" backward-delete-word
+
